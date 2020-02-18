@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-18T02:39:35.789Z</updated>
+  <updated>2020-02-18T06:50:16.573Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,84 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/02/18/hello-world/"/>
-    <id>http://yoursite.com/2020/02/18/hello-world/</id>
-    <published>2020-02-18T02:39:35.788Z</published>
-    <updated>2020-02-18T02:39:35.789Z</updated>
+    <title>hexo-插入图片方法</title>
+    <link href="http://yoursite.com/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/"/>
+    <id>http://yoursite.com/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/</id>
+    <published>2020-02-18T06:48:34.000Z</published>
+    <updated>2020-02-18T06:50:16.573Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <summary type="html">
+    
+      &lt;p&gt;很久没写博文了，今天把最近课题设计总结了一下，其中有不是图片，但还不知道怎么插入图片，就在网上搜了一下，还好有大佬的总结，跟着做了一遍，然后就行了。&lt;br&gt;下面是插入图片的方法；&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="hexo基础" scheme="http://yoursite.com/tags/hexo%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="博文插图" scheme="http://yoursite.com/tags/%E5%8D%9A%E6%96%87%E6%8F%92%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python练习</title>
+    <link href="http://yoursite.com/2020/02/18/python-lian-xi/"/>
+    <id>http://yoursite.com/2020/02/18/python-lian-xi/</id>
+    <published>2020-02-18T06:02:49.000Z</published>
+    <updated>2020-02-18T06:40:56.446Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        
+        
+          &lt;h3 id=&quot;利用turtle库绘制一个五角星&quot;&gt;&lt;a href=&quot;#利用turtle库绘制一个五角星&quot; class=&quot;headerlink&quot;
+        
       
     
     </summary>
     
     
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="python基础" scheme="http://yoursite.com/tags/python%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="turtle库" scheme="http://yoursite.com/tags/turtle%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo新建博客文章</title>
+    <link href="http://yoursite.com/2020/02/18/hello-world/"/>
+    <id>http://yoursite.com/2020/02/18/hello-world/</id>
+    <published>2020-02-18T06:02:49.000Z</published>
+    <updated>2020-02-18T06:47:36.487Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。&lt;/p&gt;
+&lt;h2 id=&quot;创建文章&quot;&gt;&lt;a href=&quot;#创建文章&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="hexo基础" scheme="http://yoursite.com/tags/hexo%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="hexo发布文章" scheme="http://yoursite.com/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/"/>
     
   </entry>
   

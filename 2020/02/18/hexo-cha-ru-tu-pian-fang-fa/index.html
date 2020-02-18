@@ -4,12 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo新建博客文章, android,java,hexo,github">
-    <meta name="description" content="初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。
-创建文章
-a.在hexo根目录下创建一个新文章hexo new &#34;文章名称&#34;
-创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下
-b.文章">
+    <meta name="keywords" content="hexo-插入图片方法, android,java,hexo,github">
+    <meta name="description" content="很久没写博文了，今天把最近课题设计总结了一下，其中有不是图片，但还不知道怎么插入图片，就在网上搜了一下，还好有大佬的总结，跟着做了一遍，然后就行了。下面是插入图片的方法；
+
+
+改站点配置
+
+
+打开站点配置文件_config.yml
+
+找到 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +21,7 @@ b.文章">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hexo新建博客文章 | AnnのTown</title>
+    <title>hexo-插入图片方法 | AnnのTown</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -264,12 +268,12 @@ b.文章">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo新建博客文章</h1>
+                    <h1 class="description center-align post-title">hexo-插入图片方法</h1>
                 </div>
             </div>
         </div>
@@ -390,8 +394,8 @@ b.文章">
                                 <span class="chip bg-color">hexo基础</span>
                             </a>
                         
-                            <a href="/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/">
-                                <span class="chip bg-color">hexo发布文章</span>
+                            <a href="/tags/%E5%8D%9A%E6%96%87%E6%8F%92%E5%9B%BE/">
+                                <span class="chip bg-color">博文插图</span>
                             </a>
                         
                     </div>
@@ -424,7 +428,7 @@ b.文章">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    217
+                    364
                 </div>
                 
 
@@ -447,38 +451,30 @@ b.文章">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。</p>
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><ul>
-<li>a.在hexo根目录下创建一个新文章<pre class=" language-bash"><code class="language-bash">hexo new <span class="token string">"文章名称"</span></code></pre>
-创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下</li>
-<li>b.文章基本设置<pre><code></code></pre></li>
+                <p>很久没写博文了，今天把最近课题设计总结了一下，其中有不是图片，但还不知道怎么插入图片，就在网上搜了一下，还好有大佬的总结，跟着做了一遍，然后就行了。<br>下面是插入图片的方法；</p>
+<a id="more"></a>
+<ul>
+<li>改站点配置</li>
 </ul>
-<hr>
-<p>title: hexo 创建文章、标签、分类<br>date: 2018-10-14 21:09:58<br>toc: true<br>categories: “Hexo”<br>tags:<br>    - hexo<br>    - 文章样式</p>
-<hr>
-<pre><code>
-## 创建标签
-- a.创建标签页面
-
-```bash
-hexo new page "tags"
-```
-
-- b.基本设置</code></pre><hr>
-<p>title: 标签<br>tags:<br>    - test<br>    - andriod<br>    - python<br>    - java<br>date: 2018-10-13 23:02:48</p>
-<hr>
-<pre><code>
-## 创建分类
-- a.创建分类页面
-```bash
-hexo new page "categories"
-```
-- b.基本设置</code></pre><hr>
-<p>title: 分类<br>date: 2018-10-13 22:51:32<br>comments: false<br>type: “java”</p>
-<hr>
-<pre><code>
-
-</code></pre><script>
+<blockquote>
+<p>打开站点配置文件<code>_config.yml</code></p>
+</blockquote>
+<p>找到 <strong>post_asset_folder:false</strong><br>将<strong>false</strong>改为<strong>true</strong></p>
+<ul>
+<li>在hexo的目录下打开git，并执行<code>npm install hexo-asset-image --save</code></li>
+</ul>
+<p>次语句的目的是下载一个本地上传图片的工具，执行后等待一会儿，命令完毕后会叫你更新升级，照着单引号的语句执行即可。</p>
+<ul>
+<li>接着新建一个文章，执行<code>hexo n "xxxx"</code>生成一个md博文</li>
+</ul>
+<p>打开博客文件，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个同名的文件夹,这个文件加上用来存放要插入的图片。</p>
+<ul>
+<li>引入图片</li>
+</ul>
+<p>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到<code>xxxx</code>这个文件夹中，然后只需要在<code>xxxx.md</code>中按照markdown的格式引入图片：</p>
+<p><code>![你想输入的替代文字](xxxx/图片名.jpg)</code></p>
+<p>写好博文，提交后，就可以看到博文里面的图片了。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -521,7 +517,7 @@ hexo new page "categories"
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/02/18/hello-world/">http://yoursite.com/2020/02/18/hello-world/</a>
+                    <a href="http://yoursite.com/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/">http://yoursite.com/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -563,8 +559,8 @@ hexo new page "categories"
                                     <span class="chip bg-color">hexo基础</span>
                                 </a>
                             
-                                <a href="/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/">
-                                    <span class="chip bg-color">hexo发布文章</span>
+                                <a href="/tags/%E5%8D%9A%E6%96%87%E6%8F%92%E5%9B%BE/">
+                                    <span class="chip bg-color">博文插图</span>
                                 </a>
                             
                         </div>
@@ -730,9 +726,72 @@ hexo new page "categories"
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="hexo-插入图片方法">
+                        
+                        <span class="card-title">hexo-插入图片方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            很久没写博文了，今天把最近课题设计总结了一下，其中有不是图片，但还不知道怎么插入图片，就在网上搜了一下，还好有大佬的总结，跟着做了一遍，然后就行了。下面是插入图片的方法；
+
+
+改站点配置
+
+
+打开站点配置文件_config.yml
+
+找到 
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">hexo基础</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E6%96%87%E6%8F%92%E5%9B%BE/">
+                        <span class="chip bg-color">博文插图</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/02/18/python-lian-xi/">
                     <div class="card-image">
@@ -765,9 +824,9 @@ t
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -789,64 +848,6 @@ t
                     
                     <a href="/tags/turtle%E5%BA%93/">
                         <span class="chip bg-color">turtle库</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/02/18/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Hexo新建博客文章">
-                        
-                        <span class="card-title">Hexo新建博客文章</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。
-创建文章
-a.在hexo根目录下创建一个新文章hexo new "文章名称"
-创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下
-b.文章
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Hexo/" class="post-category">
-                                    Hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo%E5%9F%BA%E7%A1%80/">
-                        <span class="chip bg-color">hexo基础</span>
-                    </a>
-                    
-                    <a href="/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/">
-                        <span class="chip bg-color">hexo发布文章</span>
                     </a>
                     
                 </div>

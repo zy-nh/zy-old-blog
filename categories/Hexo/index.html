@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, android,java,hexo,github">
-    <meta name="description" content="分类 | AnnのTown">
+    <meta name="keywords" content="分类: Hexo, android,java,hexo,github">
+    <meta name="description" content="分类: Hexo | AnnのTown">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类 | AnnのTown</title>
+    <title>分类: Hexo | AnnのTown</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -322,7 +322,7 @@
                 
                 <a href="/categories/Hexo/" title="Hexo: 2">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
+                             chip-active "
                             style="background-color: #F5EEF8;">Hexo
                         <span class="tag-length">2</span>
                     </span>
@@ -335,64 +335,127 @@
 </div>
 
     
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
-    </div>
-</div>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="hexo-插入图片方法">
+                            
+                            <span class="card-title">hexo-插入图片方法</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                很久没写博文了，今天把最近课题设计总结了一下，其中有不是图片，但还不知道怎么插入图片，就在网上搜了一下，还好有大佬的总结，跟着做了一遍，然后就行了。下面是插入图片的方法；
 
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
 
-    
+改站点配置
 
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
-            }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"Python","max":3},{"name":"Hexo","max":3}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            color: ['#3ecf8e'],
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [1,2],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
 
-    radarChart.setOption(option);
-</script>
-    
+打开站点配置文件_config.yml
 
+找到 
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/hexo%E5%9F%BA%E7%A1%80/">
+                            <span class="chip bg-color">hexo基础</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%8D%9A%E6%96%87%E6%8F%92%E5%9B%BE/">
+                            <span class="chip bg-color">博文插图</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/02/18/hello-world/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Hexo新建博客文章">
+                            
+                            <span class="card-title">Hexo新建博客文章</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。
+创建文章
+a.在hexo根目录下创建一个新文章hexo new "文章名称"
+创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下
+b.文章
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/hexo%E5%9F%BA%E7%A1%80/">
+                            <span class="chip bg-color">hexo基础</span>
+                        </a>
+                        
+                        <a href="/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/">
+                            <span class="chip bg-color">hexo发布文章</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
