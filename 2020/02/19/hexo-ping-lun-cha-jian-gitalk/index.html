@@ -4,12 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo新建博客文章, android,java,hexo,github">
-    <meta name="description" content="初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。
-创建文章
-a.在hexo根目录下创建一个新文章hexo new &#34;文章名称&#34;
-创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下
-b.文章">
+    <meta name="keywords" content="Hexo评论插件Gitalk, android,java,hexo,github">
+    <meta name="description" content="前言写了博客，不仅仅是自己看，当然是需要有更多的人看啊，而作者和读者之间的交流桥梁就是==评论==；因此，为博客添加评论插件是非常必要的，下面来看看怎么添加评论插件吧。
+在此之前，体验过来必力评论系统，但由于那是韩国的插件，每次加载起来是真">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +14,7 @@ b.文章">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hexo新建博客文章 | AnnのTown</title>
+    <title>Hexo评论插件Gitalk | AnnのTown</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/libs/awesome/css/all.css">
@@ -264,12 +261,12 @@ b.文章">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo新建博客文章</h1>
+                    <h1 class="description center-align post-title">Hexo评论插件Gitalk</h1>
                 </div>
             </div>
         </div>
@@ -386,12 +383,12 @@ b.文章">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo%E5%9F%BA%E7%A1%80/">
-                                <span class="chip bg-color">hexo基础</span>
+                            <a href="/tags/Gitalk/">
+                                <span class="chip bg-color">Gitalk</span>
                             </a>
                         
-                            <a href="/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/">
-                                <span class="chip bg-color">hexo发布文章</span>
+                            <a href="/tags/Hexo%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                                <span class="chip bg-color">Hexo评论插件</span>
                             </a>
                         
                     </div>
@@ -415,7 +412,7 @@ b.文章">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-18
+                    2020-02-19
                 </div>
                 
 
@@ -424,14 +421,14 @@ b.文章">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    217
+                    564
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -447,38 +444,49 @@ b.文章">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。</p>
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><ul>
-<li>a.在hexo根目录下创建一个新文章<pre class=" language-bash"><code class="language-bash">hexo new <span class="token string">"文章名称"</span></code></pre>
-创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下</li>
-<li>b.文章基本设置<pre><code></code></pre></li>
-</ul>
-<hr>
-<p>title: hexo 创建文章、标签、分类<br>date: 2018-10-14 21:09:58<br>toc: true<br>categories: “Hexo”<br>tags:<br>    - hexo<br>    - 文章样式</p>
-<hr>
-<pre><code>
-## 创建标签
-- a.创建标签页面
-
-```bash
-hexo new page "tags"
-```
-
-- b.基本设置</code></pre><hr>
-<p>title: 标签<br>tags:<br>    - test<br>    - andriod<br>    - python<br>    - java<br>date: 2018-10-13 23:02:48</p>
-<hr>
-<pre><code>
-## 创建分类
-- a.创建分类页面
-```bash
-hexo new page "categories"
-```
-- b.基本设置</code></pre><hr>
-<p>title: 分类<br>date: 2018-10-13 22:51:32<br>comments: false<br>type: “java”</p>
-<hr>
-<pre><code>
-
-</code></pre><script>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>写了博客，不仅仅是自己看，当然是需要有更多的人看啊，而作者和读者之间的交流桥梁就是==评论==；因此，为博客添加评论插件是非常必要的，下面来看看怎么添加评论插件吧。</p>
+<p>在此之前，体验过来必力评论系统，但由于那是韩国的插件，每次加载起来是真的慢，移动端评论也不友好，所以这次选的是Gitalk评论插件（所用主题:<code>Matery</code>）。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>npm安装</p>
+</blockquote>
+<p>在<code>Hexo</code>根目录下使用<code>git Bash</code></p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> i --save gitalk</code></pre>
+<p>完成后</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">import</span> <span class="token string">'gitalk/dist/gitalk.css'</span>
+<span class="token function">import</span> Gitalk from <span class="token string">'gitalk'</span></code></pre>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="新建一个仓库"><a href="#新建一个仓库" class="headerlink" title="新建一个仓库"></a>新建一个仓库</h3><p>在<code>GitHub</code>上新建一个仓库，这个操作简单，就不一一讲解了。</p>
+<p>建好仓库后，需要创建OAuth Application。</p>
+<h3 id="创建OAuth-Application"><a href="#创建OAuth-Application" class="headerlink" title="创建OAuth Application"></a>创建OAuth Application</h3><p>Gitalk 需要一个<code>Github Application</code>，<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">点击申请</a>。当然，也可以在用户头像下的<code>setting</code>下的<code>Developer settings</code>中new一个Application，然后填写相应的参数。如下图所示：</p>
+<p><img src="https://s2.ax1x.com/2020/02/19/3E9z6A.png" alt="3E9z6A.png"></p>
+<p>完成后会生成<code>Client ID</code>和<code>Client Secret</code>。如下图：</p>
+<p><a href="https://imgchr.com/i/3ECs9e" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/02/19/3ECs9e.png" alt="3ECs9e.png"></a></p>
+<h3 id="集成Gitalk"><a href="#集成Gitalk" class="headerlink" title="集成Gitalk"></a>集成Gitalk</h3><p>我使用的博客主题: <a href="https://github.com/blinkfox/hexo-theme-matery/" target="_blank" rel="noopener">Matery</a> 已经集成了<code>Gitalk</code>，（<a href="https://www.anxiaoye.xyz/" target="_blank" rel="noopener">博客预览</a>）现在可以直接在<code>themes\hexo-theme-matery\_config.yml</code>文件种找到<code>Gitalk</code>进行配置。</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># Gitalk 评论模块的配置，默认为不激活</span>
+gitalk:
+  enable: <span class="token boolean">true</span> <span class="token comment" spellcheck="true">#用来做启用判断可以不用</span>
+  owner: <span class="token comment" spellcheck="true">#Github 用户名</span>
+  repo: <span class="token comment" spellcheck="true">#储存评论issue的github仓库名：gitalk</span>
+  oauth:
+    clientId: <span class="token comment" spellcheck="true">#`Github Application clientID`</span>
+    clientSecret: <span class="token comment" spellcheck="true">#`Github Application clientSecret`</span>
+  admin: <span class="token comment" spellcheck="true"># Github 用户名</span></code></pre>
+<p>如果不是这个主题，方法也一样，先要配置<code>Gitalk</code>.<br>在<code>主题名\layout\_partial</code>文件下找到<code>gitalk.ejs</code>,若没有该文件，可以自己新建一个<code>gitalk.ejs</code>,然后添加如下代码：</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">"stylesheet"</span> href<span class="token operator">=</span><span class="token string">"https://unpkg.com/gitalk/dist/gitalk.css"</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"gitalk-container"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://unpkg.com/gitalk/dist/gitalk.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
+    <span class="token keyword">var</span> gitalk <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Gitalk</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        clientID<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.clientID %>'</span><span class="token punctuation">,</span>
+        clientSecret<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.clientSecret %>'</span><span class="token punctuation">,</span>
+        id<span class="token punctuation">:</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>pathname<span class="token punctuation">,</span>
+        repo<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.repo %>'</span><span class="token punctuation">,</span>
+        owner<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.owner %>'</span><span class="token punctuation">,</span>
+        admin<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.admin %>'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    gitalk<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'gitalk-container'</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<p>然后再按上步操作进行配置即可。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -521,7 +529,7 @@ hexo new page "categories"
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/02/18/hello-world/">http://yoursite.com/2020/02/18/hello-world/</a>
+                    <a href="http://yoursite.com/2020/02/19/hexo-ping-lun-cha-jian-gitalk/">http://yoursite.com/2020/02/19/hexo-ping-lun-cha-jian-gitalk/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -559,12 +567,12 @@ hexo new page "categories"
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo%E5%9F%BA%E7%A1%80/">
-                                    <span class="chip bg-color">hexo基础</span>
+                                <a href="/tags/Gitalk/">
+                                    <span class="chip bg-color">Gitalk</span>
                                 </a>
                             
-                                <a href="/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/">
-                                    <span class="chip bg-color">hexo发布文章</span>
+                                <a href="/tags/Hexo%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                                    <span class="chip bg-color">Hexo评论插件</span>
                                 </a>
                             
                         </div>
@@ -735,7 +743,7 @@ hexo new page "categories"
         repo: 'gitalk',
         owner: 'AnXiaoye1',
         admin: "AnXiaoye1",
-        id: '2020-02-18T14-02-49',
+        id: '2020-02-19T11-19-35',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -756,37 +764,89 @@ hexo new page "categories"
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/">
+                <a href="/2020/02/19/hexo-ping-lun-cha-jian-gitalk/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="hexo-插入图片方法">
+                        <img src="https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="Hexo评论插件Gitalk">
                         
-                        <span class="card-title">hexo-插入图片方法</span>
+                        <span class="card-title">Hexo评论插件Gitalk</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            很久没写博文了，今天把最近课题设计总结了一下，其中有不是图片，但还不知道怎么插入图片，就在网上搜了一下，还好有大佬的总结，跟着做了一遍，然后就行了。下面是插入图片的方法；
-
-
-改站点配置
-
-
-打开站点配置文件_config.yml
-
-找到 
+                            前言写了博客，不仅仅是自己看，当然是需要有更多的人看啊，而作者和读者之间的交流桥梁就是==评论==；因此，为博客添加评论插件是非常必要的，下面来看看怎么添加评论插件吧。
+在此之前，体验过来必力评论系统，但由于那是韩国的插件，每次加载起来是真
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Gitalk/">
+                        <span class="chip bg-color">Gitalk</span>
+                    </a>
+                    
+                    <a href="/tags/Hexo%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/">
+                        <span class="chip bg-color">Hexo评论插件</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/02/19/matery-zhu-ti-de-pei-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="Matery主题的配置">
+                        
+                        <span class="card-title">Matery主题的配置</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是一个简介漂亮的主题，基于Material Design的响应式设计，不得不说，主题是真的很漂亮，还集成了很多好用的插件，十分感谢作者闪烁之狐，下面就一起来配置主题吧！
+下载主题
+主题连接：hexo-theme-matery
+
+在them
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -802,80 +862,12 @@ hexo new page "categories"
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo%E5%9F%BA%E7%A1%80/">
-                        <span class="chip bg-color">hexo基础</span>
+                    <a href="/tags/Matery/">
+                        <span class="chip bg-color">Matery</span>
                     </a>
                     
-                    <a href="/tags/%E5%8D%9A%E6%96%87%E6%8F%92%E5%9B%BE/">
-                        <span class="chip bg-color">博文插图</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/02/18/python-lian-xi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/AnXiaoye1/AnXiaoye1.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="python练习">
-                        
-                        <span class="card-title">python练习</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            利用turtle库绘制一个五角星
-要求：
-
-
-图形的边缘线条为黄色
-
-填充为红色
-
-
-import turtle
-
-r = 100 # 前进距离
-θ1 = 72 # 旋转角度
-θ2 = 144
-turtle.setup(800,600)
-t
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-18
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/python%E5%9F%BA%E7%A1%80/">
-                        <span class="chip bg-color">python基础</span>
-                    </a>
-                    
-                    <a href="/tags/turtle%E5%BA%93/">
-                        <span class="chip bg-color">turtle库</span>
+                    <a href="/tags/Hexo%E4%B8%BB%E9%A2%98/">
+                        <span class="chip bg-color">Hexo主题</span>
                     </a>
                     
                 </div>

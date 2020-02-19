@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-18T06:50:16.573Z</updated>
+  <updated>2020-02-19T04:09:34.244Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,64 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo评论插件Gitalk</title>
+    <link href="http://yoursite.com/2020/02/19/hexo-ping-lun-cha-jian-gitalk/"/>
+    <id>http://yoursite.com/2020/02/19/hexo-ping-lun-cha-jian-gitalk/</id>
+    <published>2020-02-19T03:19:35.000Z</published>
+    <updated>2020-02-19T04:09:34.244Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Gitalk" scheme="http://yoursite.com/tags/Gitalk/"/>
+    
+      <category term="Hexo评论插件" scheme="http://yoursite.com/tags/Hexo%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matery主题的配置</title>
+    <link href="http://yoursite.com/2020/02/19/matery-zhu-ti-de-pei-zhi/"/>
+    <id>http://yoursite.com/2020/02/19/matery-zhu-ti-de-pei-zhi/</id>
+    <published>2020-02-19T02:50:36.000Z</published>
+    <updated>2020-02-19T03:12:17.069Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这是一个简介漂亮的主题，基于&lt;code&gt;Material Design&lt;/code&gt;的响应式设计，不得不说，主题是真的很漂亮，还集成了很多好用的插件，十分感谢作者&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="Matery" scheme="http://yoursite.com/tags/Matery/"/>
+    
+      <category term="Hexo主题" scheme="http://yoursite.com/tags/Hexo%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo-插入图片方法</title>
@@ -44,7 +102,7 @@
     <link href="http://yoursite.com/2020/02/18/hello-world/"/>
     <id>http://yoursite.com/2020/02/18/hello-world/</id>
     <published>2020-02-18T06:02:49.000Z</published>
-    <updated>2020-02-18T06:47:36.487Z</updated>
+    <updated>2020-02-19T02:53:14.904Z</updated>
     
     <summary type="html">
     

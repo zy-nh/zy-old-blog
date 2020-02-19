@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>Hexo评论插件Gitalk</title>
+      <link href="/2020/02/19/hexo-ping-lun-cha-jian-gitalk/"/>
+      <url>/2020/02/19/hexo-ping-lun-cha-jian-gitalk/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>写了博客，不仅仅是自己看，当然是需要有更多的人看啊，而作者和读者之间的交流桥梁就是==评论==；因此，为博客添加评论插件是非常必要的，下面来看看怎么添加评论插件吧。</p><p>在此之前，体验过来必力评论系统，但由于那是韩国的插件，每次加载起来是真的慢，移动端评论也不友好，所以这次选的是Gitalk评论插件（所用主题:<code>Matery</code>）。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote><p>npm安装</p></blockquote><p>在<code>Hexo</code>根目录下使用<code>git Bash</code></p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> i --save gitalk</code></pre><p>完成后</p><pre class=" language-bash"><code class="language-bash"><span class="token function">import</span> <span class="token string">'gitalk/dist/gitalk.css'</span><span class="token function">import</span> Gitalk from <span class="token string">'gitalk'</span></code></pre><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="新建一个仓库"><a href="#新建一个仓库" class="headerlink" title="新建一个仓库"></a>新建一个仓库</h3><p>在<code>GitHub</code>上新建一个仓库，这个操作简单，就不一一讲解了。</p><p>建好仓库后，需要创建OAuth Application。</p><h3 id="创建OAuth-Application"><a href="#创建OAuth-Application" class="headerlink" title="创建OAuth Application"></a>创建OAuth Application</h3><p>Gitalk 需要一个<code>Github Application</code>，<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">点击申请</a>。当然，也可以在用户头像下的<code>setting</code>下的<code>Developer settings</code>中new一个Application，然后填写相应的参数。如下图所示：</p><p><img src="https://s2.ax1x.com/2020/02/19/3E9z6A.png" alt="3E9z6A.png"></p><p>完成后会生成<code>Client ID</code>和<code>Client Secret</code>。如下图：</p><p><a href="https://imgchr.com/i/3ECs9e" target="_blank" rel="noopener"><img src="https://s2.ax1x.com/2020/02/19/3ECs9e.png" alt="3ECs9e.png"></a></p><h3 id="集成Gitalk"><a href="#集成Gitalk" class="headerlink" title="集成Gitalk"></a>集成Gitalk</h3><p>我使用的博客主题: <a href="https://github.com/blinkfox/hexo-theme-matery/" target="_blank" rel="noopener">Matery</a> 已经集成了<code>Gitalk</code>，（<a href="https://www.anxiaoye.xyz/" target="_blank" rel="noopener">博客预览</a>）现在可以直接在<code>themes\hexo-theme-matery\_config.yml</code>文件种找到<code>Gitalk</code>进行配置。</p><pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># Gitalk 评论模块的配置，默认为不激活</span>gitalk:  enable: <span class="token boolean">true</span> <span class="token comment" spellcheck="true">#用来做启用判断可以不用</span>  owner: <span class="token comment" spellcheck="true">#Github 用户名</span>  repo: <span class="token comment" spellcheck="true">#储存评论issue的github仓库名：gitalk</span>  oauth:    clientId: <span class="token comment" spellcheck="true">#`Github Application clientID`</span>    clientSecret: <span class="token comment" spellcheck="true">#`Github Application clientSecret`</span>  admin: <span class="token comment" spellcheck="true"># Github 用户名</span></code></pre><p>如果不是这个主题，方法也一样，先要配置<code>Gitalk</code>.<br>在<code>主题名\layout\_partial</code>文件下找到<code>gitalk.ejs</code>,若没有该文件，可以自己新建一个<code>gitalk.ejs</code>,然后添加如下代码：</p><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>link rel<span class="token operator">=</span><span class="token string">"stylesheet"</span> href<span class="token operator">=</span><span class="token string">"https://unpkg.com/gitalk/dist/gitalk.css"</span><span class="token operator">></span><span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"gitalk-container"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">"https://unpkg.com/gitalk/dist/gitalk.min.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>    <span class="token keyword">var</span> gitalk <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Gitalk</span><span class="token punctuation">(</span><span class="token punctuation">{</span>        clientID<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.clientID %>'</span><span class="token punctuation">,</span>        clientSecret<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.clientSecret %>'</span><span class="token punctuation">,</span>        id<span class="token punctuation">:</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>pathname<span class="token punctuation">,</span>        repo<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.repo %>'</span><span class="token punctuation">,</span>        owner<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.owner %>'</span><span class="token punctuation">,</span>        admin<span class="token punctuation">:</span> <span class="token string">'&lt;%= theme.gitalk.admin %>'</span>    <span class="token punctuation">}</span><span class="token punctuation">)</span>    gitalk<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token string">'gitalk-container'</span><span class="token punctuation">)</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre><p>然后再按上步操作进行配置即可。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Gitalk </tag>
+            
+            <tag> Hexo评论插件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Matery主题的配置</title>
+      <link href="/2020/02/19/matery-zhu-ti-de-pei-zhi/"/>
+      <url>/2020/02/19/matery-zhu-ti-de-pei-zhi/</url>
+      
+        <content type="html"><![CDATA[<p>这是一个简介漂亮的主题，基于<code>Material Design</code>的响应式设计，不得不说，主题是真的很漂亮，还集成了很多好用的插件，十分感谢作者<a href="https://github.com/blinkfox/hexo-theme-matery/" target="_blank" rel="noopener">闪烁之狐</a>，下面就一起来配置主题吧！</p><h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><blockquote><p>主题连接：<a href="https://github.com/blinkfox/hexo-theme-matery/" target="_blank" rel="noopener">hexo-theme-matery</a></p></blockquote><p>在<code>themes</code>文件下使用<code>git clone</code>命令下载</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>修改<code>Hexo</code>根目录下<code>_config.yml</code>的<code>theme</code>的值:<code>theme:hexo-theme-matery</code></p><h3 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h3><p>参考<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">闪烁之狐</a>的详细配置说明文档，介绍得很详细，不过也有地方介绍不够详细，我后面写文章补充。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Matery </tag>
+            
+            <tag> Hexo主题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo-插入图片方法</title>
       <link href="/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/"/>
       <url>/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/</url>
