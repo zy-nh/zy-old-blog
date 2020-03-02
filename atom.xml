@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://anxiaoye.xyz/"/>
-  <updated>2020-03-02T07:55:53.663Z</updated>
+  <updated>2020-03-02T08:15:46.902Z</updated>
   <id>https://anxiaoye.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://anxiaoye.xyz/2020/03/02/java-shu-zu/"/>
     <id>https://anxiaoye.xyz/2020/03/02/java-shu-zu/</id>
     <published>2020-03-02T07:18:57.000Z</published>
-    <updated>2020-03-02T07:55:53.663Z</updated>
+    <updated>2020-03-02T08:15:46.902Z</updated>
     
     <summary type="html">
     
@@ -70,9 +70,9 @@
       <category term="Hexo" scheme="https://anxiaoye.xyz/categories/Hexo/"/>
     
     
-      <category term="Gitalk" scheme="https://anxiaoye.xyz/tags/Gitalk/"/>
-    
       <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
+    
+      <category term="Gitalk" scheme="https://anxiaoye.xyz/tags/Gitalk/"/>
     
   </entry>
   
