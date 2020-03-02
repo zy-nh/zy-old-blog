@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Java-数组</title>
+      <link href="/2020/03/02/java-shu-zu/"/>
+      <url>/2020/03/02/java-shu-zu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><blockquote><p>数组：是一种容器，可同时放多个数据</p></blockquote><h2 id="特点-："><a href="#特点-：" class="headerlink" title="==特点==："></a>==特点==：</h2><p> 1.数组是一种引用类型数据</p><p> 2.数组可放多个数据，但类型必须相同</p><p> 3.数组的长度（大小）在程序运行期间不可改变</p><h2 id="1-1数组的初始化"><a href="#1-1数组的初始化" class="headerlink" title="1.1数组的初始化"></a>1.1数组的初始化</h2><blockquote><p>数组的初始化，在内存中创建一个数组，并赋给一些默认值</p></blockquote><p>1.动态初始化（指定长度）：</p><ul><li>格式：数组类型[] 数组名称 = new 数组类型[数组长度];</li></ul><p>2.静态初始化（指定内容）：</p><ul><li>格式1：数组类型[] 数组名称 = new 数组类型[] {元素1，元素2，…};</li><li>格式2：数组类型[] 数组名称 = {元素1，元素2，…};</li></ul><p><strong>【注意】：</strong></p><ul><li><p>静态/动态标准初始化格式可以拆分为2个步骤</p></li><li><p>而静态省略型格式不能拆分</p></li><li><p>如果不确定数组中的内容，用动态初始化，确定数组内容则用静态初始化<br>*</p><blockquote><p><strong>数组使用：</strong></p></blockquote></li><li><p>直接打印数组名称，输出的是数组在内存中的地址哈希值</p></li><li><p>使用动态初始化数组时，元素会有一个默认值：</p></li><li><p>整数类型，默认为 0</p></li><li><p>浮点类型，默认为 0.0</p></li><li><p>字符类型，默认为 ‘\u0000’</p></li><li><p>布尔类型，默认为 false</p></li><li><p>引用类型，默认为 null</p></li></ul><h2 id="1-2数组内存分布状态"><a href="#1-2数组内存分布状态" class="headerlink" title="1.2数组内存分布状态"></a>1.2数组内存分布状态</h2><p>一个数组的内存图如下：</p><p><img src="https://s2.ax1x.com/2020/03/02/3RvAyQ.png" alt="一个数组内存图-array1.png"></p><p> 两个数组的内存图如下：</p><p><img src="https://s2.ax1x.com/2020/03/02/3RvELj.png" alt="两个数组的内存图-array2.png"></p><p>两个引用指向同一个数组时：</p><p><img src="https://s2.ax1x.com/2020/03/02/3RvZes.png" alt="两个引用指向同一个数组-array3.png"></p><h2 id="1-3数组的遍历及使用"><a href="#1-3数组的遍历及使用" class="headerlink" title="1.3数组的遍历及使用"></a>1.3数组的遍历及使用</h2><blockquote><p>对数组的所有元素的挨个处理，默认操作就是挨个打印输出</p></blockquote><p>==快捷方式：==  <code>数组名称.fori</code></p><blockquote><p>数组作为方法的参数</p></blockquote><ul><li>当调用方法时，向方法的小括号传参，传的是==数组的地址值==</li></ul><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/** * 打印一个数组 * @param array */</span><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printArray</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> array<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><blockquote><p>数组作为方法的返回值，返回的是==数组的地址值==</p></blockquote><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/** * 要求传回 总和sum、平均值avg，把他们放在数组中（数组做返回值，返回的是数组的地址值） * @param a * @param b * @param c * @return box 数组做返回值 */</span><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">box</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">,</span> <span class="token keyword">int</span> c<span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">int</span> sum <span class="token operator">=</span> a <span class="token operator">+</span> b <span class="token operator">+</span> c<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//总和</span>    <span class="token keyword">int</span> avg <span class="token operator">=</span> sum <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//平均值</span>    <span class="token comment" spellcheck="true">//返回这两个数，用数组</span>    <span class="token comment" spellcheck="true">/*int[] box = new int[2];    box[0] = sum;//总和    box[1] = avg;//平均值*/</span>    <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> box <span class="token operator">=</span> <span class="token punctuation">{</span>sum<span class="token punctuation">,</span> avg<span class="token punctuation">}</span><span class="token punctuation">;</span>    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span> <span class="token string">"box方法内部的数组是："</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span> box <span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//地址值</span>    <span class="token keyword">return</span> box<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><p>数组元素反转：</p><p>分析如下图：</p><p><img src="https://s2.ax1x.com/2020/03/02/3RvkQg.png" alt="分析图-array4.png"></p><h2 id="1-4数组的注意事项"><a href="#1-4数组的注意事项" class="headerlink" title="1.4数组的注意事项"></a>1.4数组的注意事项</h2><ul><li>索引越界：当数组访问不存在的索引号时，出现越界异常</li><li>数组必须进行new初始化才能使用其中的元素，仅仅赋值null，会发生空指针异常</li><li>数组一旦在运行期间，长度不可改变，理解如下图：</li></ul><p><img src="https://s2.ax1x.com/2020/03/02/3RvFSS.png" alt="两个引用指向同一个数组-array5.png"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo评论插件Gitalk</title>
       <link href="/2020/02/19/hexo-ping-lun-cha-jian-gitalk/"/>
       <url>/2020/02/19/hexo-ping-lun-cha-jian-gitalk/</url>
@@ -20,9 +45,9 @@
       
         <tags>
             
-            <tag> Gitalk </tag>
+            <tag> Hexo </tag>
             
-            <tag> Hexo评论插件 </tag>
+            <tag> Gitalk </tag>
             
         </tags>
       
@@ -47,9 +72,9 @@
       
         <tags>
             
-            <tag> Matery </tag>
+            <tag> Hexo </tag>
             
-            <tag> Hexo主题 </tag>
+            <tag> Matery </tag>
             
         </tags>
       
@@ -74,9 +99,7 @@
       
         <tags>
             
-            <tag> hexo基础 </tag>
-            
-            <tag> 博文插图 </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -86,8 +109,8 @@
     
     <entry>
       <title>Hexo新建博客文章</title>
-      <link href="/2020/02/18/hello-world/"/>
-      <url>/2020/02/18/hello-world/</url>
+      <link href="/2020/02/18/hexo-xin-jian-bo-ke-wen-zhang/"/>
+      <url>/2020/02/18/hexo-xin-jian-bo-ke-wen-zhang/</url>
       
         <content type="html"><![CDATA[<p>初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。</p><h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><ul><li>a.在hexo根目录下创建一个新文章<pre class=" language-bash"><code class="language-bash">hexo new <span class="token string">"文章名称"</span></code></pre>创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下</li><li>b.文章基本设置<pre><code></code></pre></li></ul><hr><p>title: hexo 创建文章、标签、分类<br>date: 2018-10-14 21:09:58<br>toc: true<br>categories: “Hexo”<br>tags:<br>    - hexo<br>    - 文章样式</p><hr><pre><code>## 创建标签- a.创建标签页面```bashhexo new page "tags"```- b.基本设置</code></pre><hr><p>title: 标签<br>tags:<br>    - test<br>    - andriod<br>    - python<br>    - java<br>date: 2018-10-13 23:02:48</p><hr><pre><code>## 创建分类- a.创建分类页面```bashhexo new page "categories"```- b.基本设置</code></pre><hr><p>title: 分类<br>date: 2018-10-13 22:51:32<br>comments: false<br>type: “java”</p><hr><pre><code></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
@@ -101,9 +124,7 @@
       
         <tags>
             
-            <tag> hexo基础 </tag>
-            
-            <tag> hexo发布文章 </tag>
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -129,8 +150,6 @@
         <tags>
             
             <tag> python基础 </tag>
-            
-            <tag> turtle库 </tag>
             
         </tags>
       

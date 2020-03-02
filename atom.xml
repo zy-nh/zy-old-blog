@@ -2,26 +2,56 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Annの乡</title>
   
-  <subtitle>竹之叶</subtitle>
+  <subtitle>zhuyee</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://anxiaoye.xyz/"/>
-  <updated>2020-02-19T04:09:34.244Z</updated>
+  <updated>2020-03-02T07:40:11.026Z</updated>
   <id>https://anxiaoye.xyz/</id>
   
   <author>
-    <name>竹之叶</name>
+    <name>zhuyee</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java-数组</title>
+    <link href="https://anxiaoye.xyz/2020/03/02/java-shu-zu/"/>
+    <id>https://anxiaoye.xyz/2020/03/02/java-shu-zu/</id>
+    <published>2020-03-02T07:18:57.000Z</published>
+    <updated>2020-03-02T07:40:11.026Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;数组：是一种容器，可同时放多个数据&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;特点-：&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="https://anxiaoye.xyz/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="https://anxiaoye.xyz/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo评论插件Gitalk</title>
     <link href="https://anxiaoye.xyz/2020/02/19/hexo-ping-lun-cha-jian-gitalk/"/>
     <id>https://anxiaoye.xyz/2020/02/19/hexo-ping-lun-cha-jian-gitalk/</id>
     <published>2020-02-19T03:19:35.000Z</published>
-    <updated>2020-02-19T04:09:34.244Z</updated>
+    <updated>2020-03-02T04:30:15.504Z</updated>
     
     <summary type="html">
     
@@ -39,9 +69,9 @@
       <category term="Hexo" scheme="https://anxiaoye.xyz/categories/Hexo/"/>
     
     
-      <category term="Gitalk" scheme="https://anxiaoye.xyz/tags/Gitalk/"/>
+      <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
     
-      <category term="Hexo评论插件" scheme="https://anxiaoye.xyz/tags/Hexo%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/"/>
+      <category term="Gitalk" scheme="https://anxiaoye.xyz/tags/Gitalk/"/>
     
   </entry>
   
@@ -50,7 +80,7 @@
     <link href="https://anxiaoye.xyz/2020/02/19/matery-zhu-ti-de-pei-zhi/"/>
     <id>https://anxiaoye.xyz/2020/02/19/matery-zhu-ti-de-pei-zhi/</id>
     <published>2020-02-19T02:50:36.000Z</published>
-    <updated>2020-02-19T03:12:17.069Z</updated>
+    <updated>2020-03-02T04:30:39.077Z</updated>
     
     <summary type="html">
     
@@ -68,9 +98,9 @@
       <category term="Hexo" scheme="https://anxiaoye.xyz/categories/Hexo/"/>
     
     
-      <category term="Matery" scheme="https://anxiaoye.xyz/tags/Matery/"/>
+      <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
     
-      <category term="Hexo主题" scheme="https://anxiaoye.xyz/tags/Hexo%E4%B8%BB%E9%A2%98/"/>
+      <category term="Matery" scheme="https://anxiaoye.xyz/tags/Matery/"/>
     
   </entry>
   
@@ -79,7 +109,7 @@
     <link href="https://anxiaoye.xyz/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/"/>
     <id>https://anxiaoye.xyz/2020/02/18/hexo-cha-ru-tu-pian-fang-fa/</id>
     <published>2020-02-18T06:48:34.000Z</published>
-    <updated>2020-02-18T06:50:16.573Z</updated>
+    <updated>2020-03-02T04:30:04.292Z</updated>
     
     <summary type="html">
     
@@ -91,18 +121,16 @@
       <category term="Hexo" scheme="https://anxiaoye.xyz/categories/Hexo/"/>
     
     
-      <category term="hexo基础" scheme="https://anxiaoye.xyz/tags/hexo%E5%9F%BA%E7%A1%80/"/>
-    
-      <category term="博文插图" scheme="https://anxiaoye.xyz/tags/%E5%8D%9A%E6%96%87%E6%8F%92%E5%9B%BE/"/>
+      <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo新建博客文章</title>
-    <link href="https://anxiaoye.xyz/2020/02/18/hello-world/"/>
-    <id>https://anxiaoye.xyz/2020/02/18/hello-world/</id>
+    <link href="https://anxiaoye.xyz/2020/02/18/hexo-xin-jian-bo-ke-wen-zhang/"/>
+    <id>https://anxiaoye.xyz/2020/02/18/hexo-xin-jian-bo-ke-wen-zhang/</id>
     <published>2020-02-18T06:02:49.000Z</published>
-    <updated>2020-02-19T02:53:14.904Z</updated>
+    <updated>2020-03-02T04:30:31.144Z</updated>
     
     <summary type="html">
     
@@ -121,9 +149,7 @@
       <category term="Hexo" scheme="https://anxiaoye.xyz/categories/Hexo/"/>
     
     
-      <category term="hexo基础" scheme="https://anxiaoye.xyz/tags/hexo%E5%9F%BA%E7%A1%80/"/>
-    
-      <category term="hexo发布文章" scheme="https://anxiaoye.xyz/tags/hexo%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/"/>
+      <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
     
   </entry>
   
@@ -132,7 +158,7 @@
     <link href="https://anxiaoye.xyz/2020/02/18/python-lian-xi/"/>
     <id>https://anxiaoye.xyz/2020/02/18/python-lian-xi/</id>
     <published>2020-02-18T06:02:49.000Z</published>
-    <updated>2020-02-18T06:40:56.446Z</updated>
+    <updated>2020-03-02T04:30:49.224Z</updated>
     
     <summary type="html">
     
@@ -151,8 +177,6 @@
     
     
       <category term="python基础" scheme="https://anxiaoye.xyz/tags/python%E5%9F%BA%E7%A1%80/"/>
-    
-      <category term="turtle库" scheme="https://anxiaoye.xyz/tags/turtle%E5%BA%93/"/>
     
   </entry>
   
