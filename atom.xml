@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://anxiaoye.xyz/"/>
-  <updated>2020-03-02T08:15:46.902Z</updated>
+  <updated>2020-03-02T08:20:27.297Z</updated>
   <id>https://anxiaoye.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://anxiaoye.xyz/2020/03/02/java-shu-zu/"/>
     <id>https://anxiaoye.xyz/2020/03/02/java-shu-zu/</id>
     <published>2020-03-02T07:18:57.000Z</published>
-    <updated>2020-03-02T08:15:46.902Z</updated>
+    <updated>2020-03-02T08:20:27.297Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,7 @@
       
         
         
-          &lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;数组：是一种容器，可同时放多个数据&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;==特点==：&lt;/p&gt;
-&lt;p&gt;
+          &lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot;
         
       
     
@@ -70,9 +66,9 @@
       <category term="Hexo" scheme="https://anxiaoye.xyz/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
-    
       <category term="Gitalk" scheme="https://anxiaoye.xyz/tags/Gitalk/"/>
+    
+      <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
     
   </entry>
   
