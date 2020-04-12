@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://anxiaoye.xyz/"/>
-  <updated>2020-04-12T03:07:38.842Z</updated>
+  <updated>2020-04-12T03:14:21.009Z</updated>
   <id>https://anxiaoye.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://anxiaoye.xyz/2020/04/12/idea-activation-code/"/>
     <id>https://anxiaoye.xyz/2020/04/12/idea-activation-code/</id>
     <published>2020-04-12T02:58:43.000Z</published>
-    <updated>2020-04-12T03:07:38.842Z</updated>
+    <updated>2020-04-12T03:14:21.009Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;最近频繁出现IDEA不能用的情况（主要还是因为穷，不让我也有条件支持正版:cry: 有钱还请支持正版:dog:）&lt;/p&gt;
+          &lt;p&gt;最近频繁出现IDEA不能用的情况（主要还是因为穷，不然我就支持正版了，==有钱还请支持正版==）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我使用的是&lt;code&gt;win10系统&lt;/code&gt;，安装的是&lt;code&gt;IDEA
         
@@ -95,9 +95,9 @@
       <category term="Hexo" scheme="https://anxiaoye.xyz/categories/Hexo/"/>
     
     
-      <category term="Gitalk" scheme="https://anxiaoye.xyz/tags/Gitalk/"/>
-    
       <category term="Hexo" scheme="https://anxiaoye.xyz/tags/Hexo/"/>
+    
+      <category term="Gitalk" scheme="https://anxiaoye.xyz/tags/Gitalk/"/>
     
   </entry>
   
