@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Hexo新建博客文章, android,java,hexo,github">
     <meta name="description" content="初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。
-创建文章
+1、创建文章
 a.在hexo根目录下创建一个新文章hexo new &#34;文章名称&#34;
 创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下
-b.文章">
+b.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -420,7 +420,7 @@ b.文章">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    217
+                    222
                 </div>
                 
 
@@ -444,37 +444,42 @@ b.文章">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>初识Hexo，先来学习怎么创建新文章，怎么添加标签及分类。</p>
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><ul>
+<h2 id="1、创建文章"><a href="#1、创建文章" class="headerlink" title="1、创建文章"></a>1、创建文章</h2><ul>
 <li>a.在hexo根目录下创建一个新文章<pre class=" language-bash"><code class="language-bash">hexo new <span class="token string">"文章名称"</span></code></pre>
 创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下</li>
-<li>b.文章基本设置<pre><code></code></pre></li>
+<li>b.文章基本设置<pre class=" language-bash"><code class="language-bash"></code></pre>
+</li>
 </ul>
 <hr>
 <p>title: hexo 创建文章、标签、分类<br>date: 2018-10-14 21:09:58<br>toc: true<br>categories: “Hexo”<br>tags:<br>    - hexo<br>    - 文章样式</p>
 <hr>
 <pre><code>
-## 创建标签
+## 2、创建标签
 - a.创建标签页面
 
 ```bash
-hexo new page "tags"
-```
-
-- b.基本设置</code></pre><hr>
+hexo new page "tags"</code></pre><ul>
+<li>b.基本设置<pre class=" language-bash"><code class="language-bash"></code></pre>
+</li>
+</ul>
+<hr>
 <p>title: 标签<br>tags:<br>    - test<br>    - andriod<br>    - python<br>    - java<br>date: 2018-10-13 23:02:48</p>
 <hr>
 <pre><code>
-## 创建分类
+## 3、创建分类
 - a.创建分类页面
-```bash
-hexo new page "categories"
-```
-- b.基本设置</code></pre><hr>
-<p>title: 分类<br>date: 2018-10-13 22:51:32<br>comments: false<br>type: “java”</p>
-<hr>
-<pre><code>
 
-</code></pre><script>
+```bash
+hexo new page "categories"</code></pre><ul>
+<li>b.基本设置</li>
+</ul>
+<pre class=" language-bash"><code class="language-bash">---
+title: 分类
+date: 2018-10-13 22:51:32
+comments: <span class="token boolean">false</span>
+type: <span class="token string">"java"</span>
+---</code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1048,7 +1053,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3k</span>&nbsp;字
+                class="white-color">3.3k</span>&nbsp;字
             
             
             
