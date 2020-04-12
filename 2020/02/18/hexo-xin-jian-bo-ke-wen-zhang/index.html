@@ -420,7 +420,7 @@ b.">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    222
+                    278
                 </div>
                 
 
@@ -447,38 +447,45 @@ b.">
 <h2 id="1、创建文章"><a href="#1、创建文章" class="headerlink" title="1、创建文章"></a>1、创建文章</h2><ul>
 <li>a.在hexo根目录下创建一个新文章<pre class=" language-bash"><code class="language-bash">hexo new <span class="token string">"文章名称"</span></code></pre>
 创建后，会提示你文件路径，一般在  D:\hexo\blog\source_posts\ 下</li>
-<li>b.文章基本设置<pre class=" language-bash"><code class="language-bash"></code></pre>
+<li>b.文章基本设置<pre class=" language-bash"><code class="language-bash">title: hexo 创建文章、标签、分类
+date: 2018-10-14 21:09:58
+toc: <span class="token boolean">true</span> 
+categories: <span class="token string">"Hexo"</span>
+tags:
+  - hexo
+  - 文章样式</code></pre>
 </li>
 </ul>
-<hr>
-<p>title: hexo 创建文章、标签、分类<br>date: 2018-10-14 21:09:58<br>toc: true<br>categories: “Hexo”<br>tags:<br>    - hexo<br>    - 文章样式</p>
-<hr>
-<pre><code>
-## 2、创建标签
-- a.创建标签页面
-
-```bash
-hexo new page "tags"</code></pre><ul>
-<li>b.基本设置<pre class=" language-bash"><code class="language-bash"></code></pre>
+<h2 id="2、创建标签"><a href="#2、创建标签" class="headerlink" title="2、创建标签"></a>2、创建标签</h2><ul>
+<li>a.创建标签页面</li>
+</ul>
+<pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"tags"</span></code></pre>
+<ul>
+<li>b.基本设置<pre class=" language-bash"><code class="language-bash">title: 标签
+tags:
+  - <span class="token function">test</span>
+  - andriod
+  - python
+  - java
+date: 2018-10-13 23:02:48</code></pre>
 </li>
 </ul>
-<hr>
-<p>title: 标签<br>tags:<br>    - test<br>    - andriod<br>    - python<br>    - java<br>date: 2018-10-13 23:02:48</p>
-<hr>
-<pre><code>
-## 3、创建分类
-- a.创建分类页面
-
-```bash
-hexo new page "categories"</code></pre><ul>
+<h2 id="3、创建分类"><a href="#3、创建分类" class="headerlink" title="3、创建分类"></a>3、创建分类</h2><ul>
+<li>a.创建分类页面</li>
+</ul>
+<pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"categories"</span></code></pre>
+<ul>
 <li>b.基本设置</li>
 </ul>
-<pre class=" language-bash"><code class="language-bash">---
-title: 分类
+<pre class=" language-bash"><code class="language-bash">title: 分类
 date: 2018-10-13 22:51:32
 comments: <span class="token boolean">false</span>
-type: <span class="token string">"java"</span>
----</code></pre>
+type: <span class="token string">"java"</span></code></pre>
+<h2 id="4、发布文章"><a href="#4、发布文章" class="headerlink" title="4、发布文章"></a>4、发布文章</h2><p>在站点的根目录下的空白处，右键选择<code>Git Bash Here</code>，然后使用以下几个指令：</p>
+<pre class=" language-bash"><code class="language-bash">hexo cl
+hexo g
+hexo d</code></pre>
+<p>在网站上刷新一下，然后就能看到了。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1053,7 +1060,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.3k</span>&nbsp;字
+                class="white-color">3.4k</span>&nbsp;字
             
             
             
